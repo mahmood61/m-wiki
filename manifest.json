@@ -3,24 +3,28 @@
 	"name": "m-wiki",
 	"description": "Automatically redirects Wikipedia to the mobile version.",
 	"author": "Jathu Satkunarajah",
-	"version": "2.1",
+	"version": "3.0",
 	"permissions": [
-		"http://*.wikipedia.org/wiki/*",
+		"webRequest",
+		"webRequestBlocking",
 		"https://*.wikipedia.org/wiki/*"
 	],
-	"content_scripts": [{
-		"run_at": "document_start",
-		"matches": [
-			"http://*.wikipedia.org/wiki/*",
-			"https://*.wikipedia.org/wiki/*"
-		],
-		"css": [
-			"style.css"
-		],
-		"js": [
-			"script.js"
+	"background": {
+		"scripts": [
+			"background.js"
 		]
-	}],
+	},
+	"content_scripts": [
+		{
+			"run_at": "document_start",
+			"matches": [
+				"https://*.m.wikipedia.org/wiki/*"
+			],
+			"css": [
+				"style.css"
+			]
+		}
+	],
 	"icons": {
 		"16": "img/icon16.png",
 		"48": "img/icon48.png",
