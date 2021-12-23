@@ -1,11 +1,8 @@
 # m-wiki
 
 
-A Chrome extension to redirect Wikipedia to the mobile version. [Download the extension at the Chrome Store.](https://chrome.google.com/webstore/detail/m-wiki/ibnmikddaopgfbbngcgcfmanjfgbcopf)
+A Chrome extension to redirect Wikipedia to the mobile version. Fork of [Jathu's
+project](https://github.com/jathu/m-wiki), redesigned to fix the back button  in chrome.
 
-![Preview](https://raw.githubusercontent.com/jathu/m-wiki/master/img/preview.png)
+![Preview](https://raw.githubusercontent.com/mahmood61/m-wiki/master/img/preview.png)
 
-
----------------------------------
-
-August 2014 - Toronto
